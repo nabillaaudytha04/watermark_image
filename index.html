@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermark Embed & Extract</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="embed">
+            <h2>Embed Watermark</h2>
+            <form id="embedForm">
+                <input type="file" id="coverInput" accept="image/*" required>
+                <input type="file" id="watermarkInput" accept="image/*" required>
+                <button type="submit">Add Watermark</button>
+            </form>
+            <a id="downloadLink" download="watermarked_image.png" style="display: none;">Download Watermarked Image</a>
+        </div>
+        <div class="extract">
+            <h2>Extract Watermark</h2>
+            <input type="file" id="extractInput" accept="image/*" required>
+            <button id="extractBtn">Extract Watermark</button>
+            <img id="watermarkImg" alt="Watermark" style="display: none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
